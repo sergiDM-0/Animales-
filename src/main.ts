@@ -1,5 +1,6 @@
 import { animals, type Animal } from "./data"
 
+//desactiva el filtro y muestra todos los animales
 const ALL = "Todos"
 
 function escapeHtml(text: string): string {
@@ -22,11 +23,13 @@ const detailBodyEl = document.querySelector<HTMLDivElement>("#detail-body")!
 const detailWikiEl = document.querySelector<HTMLAnchorElement>("#detail-wiki")!
 const detailCloseEl = document.querySelector<HTMLButtonElement>("#detail-close")!
 
+//detecta que filtro se ha seleccionado y muestra solo esos animales 
 function filtered(): Animal[] {
   if (currentFilter === ALL) return animals
   return animals.filter((a) => a.category === currentFilter)
 }
 
+//renderiza los filtros en el DOM
 function renderFilters(): void {
   filtersEl.innerHTML = categories
     .map((cat) => {
@@ -44,6 +47,7 @@ function renderFilters(): void {
   })
 }
 
+//renderiza el HTML de cada animal en la cuadrícula
 function cardHtml(a: Animal): string {
   const desc = a.description.length > 160 ? `${a.description.slice(0, 160)}…` : a.description
   return `
@@ -65,6 +69,7 @@ function cardHtml(a: Animal): string {
   `
 }
 
+//renderiza la cuadrícula en el DOM
 function renderGrid(): void {
   gridEl.innerHTML = filtered().map(cardHtml).join("")
   gridEl.querySelectorAll<HTMLButtonElement>("[data-open]").forEach((btn) => {
@@ -76,7 +81,8 @@ function renderGrid(): void {
   })
 }
 
-function openDetail(a: Animal): void {
+//muestra los detalles de un animal en el diálogo
+  function openDetail(a: Animal): void {
   detailWikiEl.href = a.wikiUrl
   detailBodyEl.innerHTML = `
     <h2 class="detail-title">${escapeHtml(a.name)}</h2>
@@ -92,6 +98,7 @@ function openDetail(a: Animal): void {
   dialogEl.showModal()
 }
 
+//cierra el diálogo
 detailCloseEl.addEventListener("click", () => dialogEl.close())
 
 dialogEl.addEventListener("click", (e) => {

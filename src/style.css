@@ -1,42 +1,48 @@
+/* Variables CSS para definir el tema de la aplicación */
 :root {
-  --bg: #f4f4f5;
-  --surface: #ffffff;
-  --text: #18181b;
-  --muted: #71717a;
-  --border: #e4e4e7;
-  --accent: #27272a;
-  --accent-contrast: #fafafa;
-  --radius: 12px;
-  --shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+  --bg: #f0fdf4; /* Color de fondo principal */
+  --surface: #ffffff; /* Color de la superficie de los elementos */
+  --text: #166534; /* Color del texto principal */
+  --muted: #15803d; /* Color del texto secundario o silenciado */
+  --border: #bbf7d0; /* Color del borde */
+  --accent: #16a34a; /* Color de acento para elementos interactivos */
+  --accent-contrast: #ffffff; /* Color de contraste para el acento */
+  --radius: 12px; /* Radio de borde para elementos redondeados */
+  --shadow: 0 1px 3px rgb(0 0 0 / 0.08); /* Sombra para elementos */
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
   line-height: 1.5;
   color: var(--text);
   background: var(--bg);
 }
 
+/* Reseteo básico de box-sizing para todos los elementos */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* Estilos para el cuerpo de la página */
 body {
   margin: 0;
   min-height: 100vh;
 }
 
+/* Contenedor principal para centrar el contenido y aplicar padding */
 .wrap {
   max-width: 72rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
+/* Estilos para el encabezado del sitio */
 .site-header {
   border-bottom: 1px solid var(--border);
   background: var(--surface);
   box-shadow: var(--shadow);
 }
 
+/* Estilos para el título principal en el encabezado */
 .site-header h1 {
   margin: 0 0 0.25rem;
   font-size: clamp(1.5rem, 4vw, 2rem);
@@ -44,23 +50,27 @@ body {
   letter-spacing: -0.02em;
 }
 
+/* Estilos para la descripción o texto introductorio */
 .lede {
   margin: 0 0 1rem;
   color: var(--muted);
   font-size: 0.95rem;
 }
 
+/* Padding específico para el contenedor del encabezado */
 .site-header .wrap {
   padding-top: 1.75rem;
   padding-bottom: 1.25rem;
 }
 
+/* Contenedor para los botones de filtro */
 .filters {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
+/* Estilos base para los chips de filtro */
 .chip {
   cursor: pointer;
   border: 1px solid var(--border);
@@ -72,27 +82,32 @@ body {
   transition: background 0.15s, border-color 0.15s, color 0.15s;
 }
 
+/* Estilos de hover para los chips de filtro */
 .chip:hover {
   background: var(--bg);
 }
 
+/* Estilos para el chip de filtro activo */
 .chip.is-active {
   background: var(--accent);
   color: var(--accent-contrast);
   border-color: var(--accent);
 }
 
+/* Padding para el contenido principal */
 main.wrap {
   padding-top: 1.5rem;
   padding-bottom: 2.5rem;
 }
 
+/* Estilos para la cuadrícula de tarjetas de animales */
 .grid {
   display: grid;
   gap: 1.25rem;
   grid-template-columns: 1fr;
 }
 
+/* Media queries para la cuadrícula en diferentes tamaños de pantalla */
 @media (min-width: 640px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -105,6 +120,7 @@ main.wrap {
   }
 }
 
+/* Estilos para la tarjeta individual de animal */
 .card {
   background: var(--surface);
   border-radius: var(--radius);
@@ -116,10 +132,12 @@ main.wrap {
   transition: box-shadow 0.2s;
 }
 
+/* Estilos de hover para la tarjeta */
 .card:hover {
   box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
 }
 
+/* Estilos para la imagen de la tarjeta */
 .card-img {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -128,6 +146,7 @@ main.wrap {
   background: var(--border);
 }
 
+/* Estilos para el cuerpo de la tarjeta (contenido de texto) */
 .card-body {
   padding: 1rem 1rem 1.1rem;
   display: flex;
@@ -136,6 +155,7 @@ main.wrap {
   gap: 0.35rem;
 }
 
+/* Contenedor para el encabezado de la tarjeta (título y píldora de categoría) */
 .card-head {
   display: flex;
   align-items: flex-start;
@@ -143,12 +163,14 @@ main.wrap {
   gap: 0.5rem;
 }
 
+/* Estilos para el título de la tarjeta */
 .card-title {
   margin: 0;
   font-size: 1.05rem;
   font-weight: 600;
 }
 
+/* Estilos para el nombre científico en la tarjeta */
 .card-sci {
   margin: 0;
   font-size: 0.85rem;
@@ -156,23 +178,27 @@ main.wrap {
   color: var(--muted);
 }
 
+/* Estilos para la descripción de la tarjeta */
 .card-desc {
   margin: 0.25rem 0 0;
   font-size: 0.875rem;
   color: var(--muted);
   flex: 1;
   display: -webkit-box;
+  line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
+/* Contenedor para las acciones de la tarjeta (botones) */
 .card-actions {
   display: flex;
   gap: 0.5rem;
   margin-top: 0.75rem;
 }
 
+/* Estilos para la píldora de categoría */
 .pill {
   font-size: 0.7rem;
   font-weight: 500;
@@ -185,6 +211,7 @@ main.wrap {
   white-space: nowrap;
 }
 
+/* Estilos base para los botones */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -200,26 +227,31 @@ main.wrap {
   transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 
+/* Estilos para el botón primario */
 .btn-primary {
   background: var(--accent);
   color: var(--accent-contrast);
   flex: 1;
 }
 
+/* Estilos de hover para el botón primario */
 .btn-primary:hover {
   filter: brightness(1.08);
 }
 
+/* Estilos para el botón de contorno */
 .btn-outline {
   border-color: var(--border);
   background: var(--surface);
   color: var(--text);
 }
 
+/* Estilos de hover para el botón de contorno */
 .btn-outline:hover {
   background: var(--bg);
 }
 
+/* Estilos para el botón fantasma (transparente) */
 .btn-ghost {
   border: none;
   background: transparent;
@@ -229,6 +261,7 @@ main.wrap {
   line-height: 1;
 }
 
+/* Estilos para el cuadro de diálogo de detalle */
 .detail-dialog {
   max-width: min(36rem, calc(100vw - 2rem));
   width: 100%;
@@ -238,10 +271,12 @@ main.wrap {
   box-shadow: 0 16px 48px rgb(0 0 0 / 0.18);
 }
 
+/* Estilos para el fondo del cuadro de diálogo */
 .detail-dialog::backdrop {
   background: rgb(0 0 0 / 0.45);
 }
 
+/* Barra de herramientas dentro del detalle */
 .detail-toolbar {
   display: flex;
   justify-content: flex-end;
@@ -249,17 +284,20 @@ main.wrap {
   margin: 0;
 }
 
+/* Cuerpo del contenido del detalle */
 .detail-body {
   padding: 0 1.25rem 1rem;
   max-height: min(60vh, 480px);
   overflow-y: auto;
 }
 
+/* Título del detalle */
 .detail-title {
   margin: 0;
   font-size: 1.25rem;
 }
 
+/* Nombre científico en el detalle */
 .detail-sci {
   margin: 0.15rem 0 0.75rem;
   font-size: 0.9rem;
@@ -267,6 +305,7 @@ main.wrap {
   color: var(--muted);
 }
 
+/* Imagen en el detalle */
 .detail-img {
   width: 100%;
   border-radius: 8px;
@@ -275,11 +314,13 @@ main.wrap {
   background: var(--border);
 }
 
+/* Texto de descripción en el detalle */
 .detail-text {
   font-size: 0.9rem;
   margin: 0.75rem 0 0;
 }
 
+/* Lista de definición en el detalle */
 .detail-dl {
   margin: 1rem 0 0;
   display: grid;
@@ -287,6 +328,7 @@ main.wrap {
   font-size: 0.9rem;
 }
 
+/* Títulos de la lista de definición */
 .detail-dl dt {
   font-weight: 600;
   color: var(--muted);
@@ -295,10 +337,12 @@ main.wrap {
   letter-spacing: 0.04em;
 }
 
+/* Descripciones de la lista de definición */
 .detail-dl dd {
   margin: 0.15rem 0 0;
 }
 
+/* Acciones en el pie del detalle */
 .detail-actions {
   display: flex;
   justify-content: flex-end;
