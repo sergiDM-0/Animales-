@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enciclopedia de animales (simple)</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-header">
+        <div class="wrap">
+          <h1>Enciclopedia de animales</h1>
+          <p class="lede">Versión ligera: solo HTML, CSS y TypeScript.</p>
+          <div id="filters" class="filters" aria-label="Filtrar por categoría"></div>
+        </div>
+      </header>
+      <main class="wrap">
+        <div id="grid" class="grid"></div>
+      </main>
+    </div>
+
+    <dialog id="detail" class="detail-dialog">
+      <form method="dialog" class="detail-toolbar">
+        <button type="submit" value="close" class="btn btn-ghost" aria-label="Cerrar">
+          ✕
+        </button>
+      </form>
+      <div id="detail-body" class="detail-body"></div>
+      <div class="detail-actions">
+        <button type="button" id="detail-close" class="btn btn-outline">Cerrar</button>
+        <a id="detail-wiki" class="btn btn-primary" href="#" target="_blank" rel="noreferrer"
+          >Wikipedia</a
+        >
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
