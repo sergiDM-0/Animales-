@@ -1,4 +1,4 @@
-# Documentación del proyecto (versión simple)
+# Documentación del proyecto
 
 Este proyecto es una “enciclopedia de animales” en **HTML + CSS + TypeScript** usando **Vite** como servidor de desarrollo y herramienta de build.
 

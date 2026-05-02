@@ -227,5 +227,78 @@ export const animals: Animal[] = [
     wikiUrl: "https://es.wikipedia.org/wiki/Gallus_gallus_domesticus",
     category: "Ave"
   },
-  
+  {
+
+    id: "18",
+    name:"Lagarto Acorazado Arnadillo",
+    scientificName:"Ouroborus catapharactus",
+    description:"Originario de Sudáfrica, este peculiar lagarto es conocido por su singular mecanismo de defensa: enrollarse en forma de bola y morderse la cola. Al hacerlo, se asemeja al antiguo símbolo del Ouroboros, lo cual se refleja en el nombre científico de la especie. El lagarto armadillo se alimenta principalmente de pequeños invertebrados. Es uno de los pocos lagartos que da a luz crías vivas (en lugar de poner huevos).",
+    habitat:"África (específicamente, Sudáfrica)",
+    diet:"termitas, pequeños invertebrados eje: escorpiones",
+    image:"https://www.activewild.com/wp-content/uploads/2023/04/Armadillo-Girdled-Lizard.jpg",
+    wikiUrl:"https://es.wikipedia.org/wiki/Ouroborus_cataphractus",
+    category: "Reptil"
+  },
+  {
+    id:"19",
+    name:"Tortuga gigante asiática de caparazón blando",
+    scientificName:"Pelochelys cantorii",
+    description:"Originaria del sudeste asiático, esta tortuga de agua dulce es una de las tortugas de caparazón blando más grandes y, al igual que otras tortugas de caparazón blando, posee un caparazón aplanado y coriáceo. Es principalmente carnívora y se alimenta de peces, crustáceos y moluscos. Esta tortuga de aspecto peculiar se encuentra en peligro crítico de extinción debido a la pérdida de su hábitat y la caza excesiva para el consumo de su carne.",
+    habitat:"Asia (Sudeste Asiático)",
+    diet:"Carnívora (Peces, crustáceos y moluscos)",
+    image:"https://www.activewild.com/wp-content/uploads/2022/06/Asian-Giant-Softshell-Turtle.jpg",
+    wikiUrl:"https://en-wikipedia-org.translate.goog/wiki/Asian_giant_softshell_turtle?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc",
+    category:"Reptil"
+  },
+  {
+    id:"20",
+    name:"Eslizones de lengua azul",
+    scientificName:"Tiliqua spp",
+    description:"Originarios de Australia, estos llamativos reptiles son conocidos por sus lenguas de un azul intenso, que exhiben ante posibles depredadores como una forma de exhibición de sobresalto (la visión de la lengua azul del lagarto puede asustar al depredador, permitiéndole escapar). Los eslizones de lengua azul son omnívoros y se alimentan de una variedad de plantas, insectos y pequeños animales",
+    habitat:"Australia",
+    diet:"Omnívoro (Plantas, insectos y pequeños animales)",
+    image:"https://www.activewild.com/wp-content/uploads/2018/04/blue-tongued-skink.jpg",
+    wikiUrl:"https://en-wikipedia-org.translate.goog/wiki/Blue-tongued_skink?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc",
+    category:"Reptil"
+  },
+
+  {
+    id:"21",
+    name:"Lagarto cocodrilo chino",
+    scientificName:"Shinisaurus crocodilurus",
+    description:"Este lagarto semiacuático, originario de China y Vietnam, tiene una apariencia distintiva, con escamas carenadas en el dorso y la cola que recuerdan a las de un cocodrilo. Se alimenta de diversos insectos, invertebrados y peces pequeños. Este peculiar lagarto se encuentra en peligro de extinción debido a la pérdida de su hábitat y a la caza furtiva para su venta como mascota",
+    habitat:"Asia (China y Vietnam)",
+    diet:"Carnívoro (Insectos, invertebrados y peces pequeños)",
+    image:"https://www.activewild.com/wp-content/uploads/2023/04/Chinese-Crocodile-Lizard.jpg",
+    wikiUrl:"https://es.wikipedia.org/wiki/Shinisaurus_crocodilurus",
+    category:"Reptil"
+  },
+  {
+    id:"22",
+    name:"Geckos voladores",
+    scientificName:"Gekko spp",
+    description:"Originarios del sudeste asiático, estos geckos arborícolas (que habitan en los árboles) poseen adaptaciones especializadas, como pliegues de piel y patas palmeadas, que les permiten planear distancias cortas entre los árboles. Se alimentan principalmente de insectos y otros pequeños invertebrados.",
+    habitat:"Asia (Sudeste Asiático)",
+    diet:"Carnívoro (Insectos y otros pequeños invertebrados)",
+    image:"https://www.activewild.com/wp-content/uploads/2023/04/Kuhls-Flying-Gecko-Ptychozoon-kuhli-CC.jpg",
+    wikiUrl:"https://es.wikipedia.org/wiki/Ptychozoon",
+    category:"Reptil"
+    
+  }
+
+
+/*
+ {
+   id: "",
+   name: "",
+   scientificName: "",
+   description: "",
+   habitat: "",
+   diet: "",
+   image: "",
+   wikiUrl: "",
+   category: ""
+ }
+*/
 ];
+

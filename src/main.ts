@@ -16,6 +16,14 @@ const categories = [
 
 let currentFilter = ALL
 
+// Esta parte del código obtiene referencias a los elementos principales del DOM necesarios para la interacción de la interfaz:
+// - filtersEl: el contenedor de los botones de filtro de categorías (#filters)
+// - gridEl: la cuadrícula donde se muestran las tarjetas de animales (#grid)
+// - dialogEl: el cuadro de diálogo que muestra la información detallada de un animal (#detail)
+// - detailBodyEl: el contenido principal del diálogo de detalle (#detail-body)
+// - detailWikiEl: el enlace a Wikipedia dentro del diálogo de detalle (#detail-wiki)
+// - detailCloseEl: el botón para cerrar el diálogo de detalle (#detail-close)
+
 const filtersEl = document.querySelector<HTMLDivElement>("#filters")!
 const gridEl = document.querySelector<HTMLDivElement>("#grid")!
 const dialogEl = document.querySelector<HTMLDialogElement>("#detail")!
