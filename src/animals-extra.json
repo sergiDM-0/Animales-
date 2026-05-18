@@ -5,7 +5,7 @@
     "description": "La jirafa es el mamífero terrestre más alto. Su cuello largo y su lengua prensil le permiten alcanzar hojas en las copas de los árboles de las sabanas africanas.",
     "habitat": "Sabanas y bosques abiertos de África subsahariana",
     "diet": "Herbívoro (hojas y brotes)",
-    "image": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Giraffa_camelopardalis_angolensis.jpg/330px-Giraffa_camelopardalis_angolensis.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Giraffa_camelopardalis",
     "category": "Mamífero"
   },
@@ -15,7 +15,7 @@
     "description": "La cebra es un équido africano reconocible por sus franjas blancas y negras. Vive en manadas y comparte hábitat con ñus y antílopes.",
     "habitat": "Sabanas y pastizales de África oriental y meridional",
     "diet": "Herbívoro",
-    "image": "https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/330px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Equus_quagga",
     "category": "Mamífero"
   },
@@ -25,7 +25,7 @@
     "description": "El hipopótamo es un gran mamífero semiacuático. Pasa el día en ríos y lagunas y sale de noche a pastar. Es uno de los herbívoros más pesados de África.",
     "habitat": "Ríos, lagos y pantanos de África subsahariana",
     "diet": "Herbívoro",
-    "image": "https://images.unsplash.com/photo-1535334740707-9c8c8c7e3951?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Hipop%C3%B3tamo_%28Hippopotamus_amphibius%29%2C_parque_nacional_de_Chobe%2C_Botsuana%2C_2018-07-28%2C_DD_80.jpg/330px-Hipop%C3%B3tamo_%28Hippopotamus_amphibius%29%2C_parque_nacional_de_Chobe%2C_Botsuana%2C_2018-07-28%2C_DD_80.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Hippopotamus_amphibius",
     "category": "Mamífero"
   },
@@ -35,7 +35,7 @@
     "description": "El rinoceronte blanco es el mayor de los rinocerontes vivos. A pesar de su nombre, su color es gris. Está amenazado por la caza furtiva de su cuerno.",
     "habitat": "Sabanas, matorrales y bosques de África meridional y oriental",
     "diet": "Herbívoro",
-    "image": "https://images.unsplash.com/photo-1551316675-0b0d0a0b0e0e?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Ceratotherium_simum_Kruger_Park_02.JPG/330px-Ceratotherium_simum_Kruger_Park_02.JPG",
     "wikiUrl": "https://es.wikipedia.org/wiki/Ceratotherium_simum",
     "category": "Mamífero"
   },
@@ -45,7 +45,7 @@
     "description": "El oso polar es el mayor depredador terrestre del Ártico. Está adaptado al hielo y al frío, con pelaje denso y gran capacidad para nadar tras focas.",
     "habitat": "Hielo marino y costas del Ártico",
     "diet": "Carnívoro (principalmente focas)",
-    "image": "https://images.unsplash.com/photo-1589656966895-2f33e7653819?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Polar_Bear_-_Alaska.jpg/330px-Polar_Bear_-_Alaska.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Ursus_maritimus",
     "category": "Mamífero"
   },
@@ -55,7 +55,7 @@
     "description": "El oso pardo es un gran carnívoro omnívoro de Eurasia y América del Norte. Muestra gran variación de tamaño y color según la región.",
     "habitat": "Bosques, montañas y tundra del hemisferio norte",
     "diet": "Omnívoro",
-    "image": "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Brown_bear_%28Ursus_arctos%29%2C_Viiksimo%2C_Kainuu_region%2C_Finland%2C_16_June_2018_%2843094873292%29.jpg/330px-Brown_bear_%28Ursus_arctos%29%2C_Viiksimo%2C_Kainuu_region%2C_Finland%2C_16_June_2018_%2843094873292%29.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Ursus_arctos",
     "category": "Mamífero"
   },
@@ -65,7 +65,7 @@
     "description": "El lobo es un cánido social que caza en manada. Ha sido perseguido durante siglos, pero sigue siendo clave para el equilibrio de muchos ecosistemas.",
     "habitat": "Bosques, tundra, estepas y montañas del hemisferio norte",
     "diet": "Carnívoro",
-    "image": "https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Canis_lupus_265b.jpg/330px-Canis_lupus_265b.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Canis_lupus",
     "category": "Mamífero"
   },
@@ -75,7 +75,7 @@
     "description": "El zorro rojo es un cánido adaptable presente en Europa, Asia y América del Norte. Es omnívoro, sigiloso y activo sobre todo al amanecer y al atardecer.",
     "habitat": "Bosques, praderas, montañas y zonas urbanas",
     "diet": "Omnívoro",
-    "image": "https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Vulpes_vulpes_2.jpg/330px-Vulpes_vulpes_2.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Vulpes_vulpes",
     "category": "Mamífero"
   },
@@ -85,7 +85,7 @@
     "description": "El koala es un marsupial arborícola australiano. Se alimenta casi exclusivamente de hojas de eucalipto y duerme muchas horas al día.",
     "habitat": "Bosques de eucalipto de Australia oriental",
     "diet": "Herbívoro (hojas de eucalipto)",
-    "image": "https://images.unsplash.com/photo-1459262838948-3e2de994c989?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/330px-Koala_climbing_tree.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Phascolarctos_cinereus",
     "category": "Mamífero"
   },
@@ -95,7 +95,7 @@
     "description": "El ornitorrinco es un mamífero ovíparo de Australia. Tiene pico de pato, veneno en los machos y es uno de los pocos mamíferos que ponen huevos.",
     "habitat": "Ríos y lagos del este de Australia y Tasmania",
     "diet": "Carnívoro (invertebrados acuáticos)",
-    "image": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Platypus.jpg/330px-Platypus.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Ornithorhynchus_anatinus",
     "category": "Mamífero"
   },
@@ -105,7 +105,7 @@
     "description": "El gorila de montaña vive en los bosques nubosos de África central. Es el mayor de los primates y vive en grupos familiares liderados por un macho plateado.",
     "habitat": "Bosques montanos de Ruanda, Uganda y República Democrática del Congo",
     "diet": "Herbívoro (hojas, tallos y frutos)",
-    "image": "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/I%27m_sooooo_tired.jpg/330px-I%27m_sooooo_tired.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Gorilla_beringei",
     "category": "Mamífero"
   },
@@ -115,7 +115,7 @@
     "description": "El chimpancé es uno de los primates más cercanos genéticamente al ser humano. Usa herramientas, tiene cultura social y vive en comunidades complejas.",
     "habitat": "Bosques y sabanas de África central y occidental",
     "diet": "Omnívoro",
-    "image": "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/330px-015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "wikiUrl": "https://es.wikipedia.org/wiki/Pan_troglodytes",
     "category": "Mamífero"
   },
@@ -125,7 +125,7 @@
     "description": "El lémur de cola anillada es un primate endémico de Madagascar. Es muy social y usa su cola en blanco y negro para comunicarse.",
     "habitat": "Zonas arbustivas y espinosas del sur de Madagascar",
     "diet": "Omnívoro (frutos, hojas e insectos)",
-    "image": "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Katta_8467.jpg/330px-Katta_8467.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Lemur_catta",
     "category": "Mamífero"
   },
@@ -135,7 +135,7 @@
     "description": "La ballena azul es el animal más grande que ha existido. Se alimenta de krill filtrando enormes volúmenes de agua con sus barbas.",
     "habitat": "Océanos de todo el mundo",
     "diet": "Carnívoro (krill y plancton)",
-    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg/330px-Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Balaenoptera_musculus",
     "category": "Mamífero"
   },
@@ -145,7 +145,7 @@
     "description": "La orca es el mayor delfínido. Es un depredador inteligente que caza en grupo peces, focas e incluso ballenas pequeñas.",
     "habitat": "Océanos de todos los climas",
     "diet": "Carnívoro",
-    "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/JumpingOrca.jpg/330px-JumpingOrca.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Orcinus_orca",
     "category": "Mamífero"
   },
@@ -155,7 +155,7 @@
     "description": "El camello bactriano tiene dos jorobas y está adaptado a desiertos fríos y calurosos de Asia central. Puede sobrevivir largos periodos sin agua.",
     "habitat": "Desiertos y estepas de Asia central",
     "diet": "Herbívoro",
-    "image": "https://images.unsplash.com/photo-1509316784379-1af8fd2b1d33?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/2011_Trampeltier_1528.JPG/330px-2011_Trampeltier_1528.JPG?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "wikiUrl": "https://es.wikipedia.org/wiki/Camelus_bactrianus",
     "category": "Mamífero"
   },
@@ -165,7 +165,7 @@
     "description": "La llama es un camélido sudamericano domesticado hace miles de años. Se usa como animal de carga y su lana es muy apreciada.",
     "habitat": "Altiplano andino (Perú, Bolivia, Chile, Argentina)",
     "diet": "Herbívoro",
-    "image": "https://images.unsplash.com/photo-1516734212186-a967f81d0d4a?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Llamas%2C_Vernagt-Stausee%2C_Italy.jpg/330px-Llamas%2C_Vernagt-Stausee%2C_Italy.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Lama_glama",
     "category": "Mamífero"
   },
@@ -175,7 +175,7 @@
     "description": "El guepardo es el felino terrestre más rápido, alcanzando picos de velocidad en persecuciones cortas. Habita principalmente en sabanas africanas.",
     "habitat": "Sabanas y praderas abiertas de África y partes de Irán",
     "diet": "Carnívoro",
-    "image": "https://images.unsplash.com/photo-1456926631665-4d1b754e0e73?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TheCheethcat.jpg/330px-TheCheethcat.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Acinonyx_jubatus",
     "category": "Mamífero"
   },
@@ -275,7 +275,7 @@
     "description": "El cocodrilo del Nilo es uno de los mayores reptiles vivos. Es un depredador acuático muy territorial presente en ríos y lagos de África.",
     "habitat": "Ríos, lagos y pantanos de África",
     "diet": "Carnívoro",
-    "image": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Nile_crocodile_at_St_Lucia_Lakes.jpg/330px-Nile_crocodile_at_St_Lucia_Lakes.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Crocodylus_niloticus",
     "category": "Reptil"
   },
@@ -285,7 +285,7 @@
     "description": "El dragón de Komodo es el mayor lagarto del mundo. Habita en islas indonesias y caza presas grandes con mordida venenosa y bacterias.",
     "habitat": "Islas de Komodo, Rinca y Flores (Indonesia)",
     "diet": "Carnívoro",
-    "image": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Komodo_dragon_with_tongue.jpg/330px-Komodo_dragon_with_tongue.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Varanus_komodoensis",
     "category": "Reptil"
   },
@@ -295,7 +295,7 @@
     "description": "El camaleón puede cambiar de color según el estado de ánimo y la temperatura. Sus ojos se mueven de forma independiente y su lengua es muy rápida.",
     "habitat": "Matorrales y bosques del Mediterráneo y norte de África",
     "diet": "Carnívoro (insectos)",
-    "image": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Chamaeleo_chamaeleon_2.jpg/330px-Chamaeleo_chamaeleon_2.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Chamaeleo_chamaeleon",
     "category": "Reptil"
   },
@@ -305,7 +305,7 @@
     "description": "Las serpientes de cascabel son víboras americanas venenosas. La vibración de su cola advierte a posibles amenazas.",
     "habitat": "Desiertos, bosques y praderas de América",
     "diet": "Carnívoro (roedores y aves)",
-    "image": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Crotalus_cerastes_mesquite_flat_dunes_1.jpg/330px-Crotalus_cerastes_mesquite_flat_dunes_1.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Crotalus",
     "category": "Reptil"
   },
@@ -315,7 +315,7 @@
     "description": "La salamandra común es un anfibio de piel negra con manchas amarillas. Muchas especies del género segregan toxinas por la piel.",
     "habitat": "Bosques húmedos de Europa",
     "diet": "Carnívoro (insectos y gusanos)",
-    "image": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Salamandra_salamandra_MHNT.jpg/330px-Salamandra_salamandra_MHNT.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Salamandra_salamandra",
     "category": "Anfibio"
   },
@@ -325,7 +325,7 @@
     "description": "El sapo común es robusto y de piel rugosa. Pasa mucho tiempo en tierra y regresa a charcas para reproducirse.",
     "habitat": "Bosques, jardines y praderas de Europa y Asia",
     "diet": "Carnívoro (insectos, lombrices y babosas)",
-    "image": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Bufo_bufo_03-1.jpg/330px-Bufo_bufo_03-1.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Bufo_bufo",
     "category": "Anfibio"
   },
@@ -335,7 +335,7 @@
     "description": "El tiburón blanco es uno de los mayores depredadores marinos. Tiene un olfato excelente y dientes serrados que renueva continuamente.",
     "habitat": "Océanos templados y subtropicales de todo el mundo",
     "diet": "Carnívoro (peces, mamíferos marinos y carroña)",
-    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/330px-White_shark.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Carcharodon_carcharias",
     "category": "Pez"
   },
@@ -345,7 +345,7 @@
     "description": "Los caballitos de mar son peces con cuerpo erguido y cola prensil. El macho incuban los huevos en una bolsa ventral.",
     "habitat": "Zonas costeras, praderas marinas y arrecifes",
     "diet": "Carnívoro (pequeños crustáceos)",
-    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Pacific_Seahorse_Hippocampus_ingens.jpg/330px-Pacific_Seahorse_Hippocampus_ingens.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Hippocampus",
     "category": "Pez"
   },
@@ -355,7 +355,7 @@
     "description": "La mantarraya gigante es el pez rayado más grande. Se alimenta de plancton y puede saltar fuera del agua en espectaculares acrobacias.",
     "habitat": "Océanos tropicales y subtropicales",
     "diet": "Carnívoro (plancton y peces pequeños)",
-    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Manta_birostris-p_edit.jpg/330px-Manta_birostris-p_edit.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Mobula_birostris",
     "category": "Pez"
   },
@@ -365,7 +365,7 @@
     "description": "La abeja melífera es esencial para la polinización de cultivos y flores silvestres. Vive en colonias con una reina, obreras y zánganos.",
     "habitat": "Praderas, jardines y bosques de todo el mundo",
     "diet": "Herbívoro (néctar y polen)",
-    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Apis_mellifera_Western_honey_bee.jpg/330px-Apis_mellifera_Western_honey_bee.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Apis_mellifera",
     "category": "Invertebrado"
   },
@@ -375,7 +375,7 @@
     "description": "Las mariquitas son pequeños escarabajos, a menudo rojos con puntos. Son aliadas en el control de pulgones en agricultura y jardines.",
     "habitat": "Campos, jardines y bosques de todo el mundo",
     "diet": "Carnívoro (pulgones y otros insectos pequeños)",
-    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Coccinella_septempunctata_08.jpg/330px-Coccinella_septempunctata_08.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Coccinellidae",
     "category": "Invertebrado"
   },
@@ -385,7 +385,7 @@
     "description": "Los escorpiones son arácnidos con pinzas y aguijón venenoso. Habitan sobre todo en zonas cálidas y secas.",
     "habitat": "Desiertos, sabanas y zonas rocosas de todos los continentes excepto la Antártida",
     "diet": "Carnívoro (insectos y arácnidos)",
-    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Scorpion_dorsal.jpg/330px-Scorpion_dorsal.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Scorpiones",
     "category": "Invertebrado"
   },
@@ -395,7 +395,7 @@
     "description": "Los cangrejos ermitaños protegen su abdomen blando ocupando conchas vacías de caracoles, que van cambiando al crecer.",
     "habitat": "Costas rocosas y fondos marinos de todo el mundo",
     "diet": "Omnívoro (algas, restos y animales pequeños)",
-    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Cenobita_clypeatus_1.jpg/330px-Cenobita_clypeatus_1.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Paguroidea",
     "category": "Invertebrado"
   },
@@ -405,7 +405,7 @@
     "description": "Las medusas son cnidarios de cuerpo gelatinoso que a la deriva en el plancton. Muchas tienen tentáculos urticantes.",
     "habitat": "Océanos y mares de todo el mundo",
     "diet": "Carnívoro (plancton y peces pequeños)",
-    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Jelly_cc11.jpg/330px-Jelly_cc11.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Scyphozoa",
     "category": "Invertebrado"
   },
@@ -415,7 +415,7 @@
     "description": "El calamar común es un cefalópodo rápido con diez tentáculos. Puede cambiar de color y expulsar tinta para escapar.",
     "habitat": "Aguas costeras del Atlántico y Mediterráneo",
     "diet": "Carnívoro (peces y crustáceos)",
-    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&q=80&w=800",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Loligo_vulgaris_01.jpg/330px-Loligo_vulgaris_01.jpg",
     "wikiUrl": "https://es.wikipedia.org/wiki/Loligo_vulgaris",
     "category": "Invertebrado"
   }

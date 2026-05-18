@@ -1,177 +1,52 @@
 [
-  {
-    "wikiTitle": "Ciervo rojo",
-    "scientificName": "Cervus elaphus",
-    "category": "Mamífero",
-    "habitat": "Bosques y praderas de Europa, Asia y norte de África",
-    "diet": "Herbívoro"
-  },
-  {
-    "wikiTitle": "Alce",
-    "scientificName": "Alces alces",
-    "category": "Mamífero",
-    "habitat": "Bosques boreales y pantanos del norte de Europa, Asia y América",
-    "diet": "Herbívoro"
-  },
-  {
-    "wikiTitle": "Castor europeo",
-    "scientificName": "Castor fiber",
-    "category": "Mamífero",
-    "habitat": "Ríos y lagos de Europa y Asia",
-    "diet": "Herbívoro (corteza y ramas)"
-  },
-  {
-    "wikiTitle": "Mapache",
-    "scientificName": "Procyon lotor",
-    "category": "Mamífero",
-    "habitat": "Bosques y zonas urbanas de América",
-    "diet": "Omnívoro"
-  },
-  {
-    "wikiTitle": "Bisonte americano",
-    "scientificName": "Bison bison",
-    "category": "Mamífero",
-    "habitat": "Praderas de América del Norte",
-    "diet": "Herbívoro"
-  },
-  {
-    "wikiTitle": "Puercoespín",
-    "scientificName": "Hystrix cristata",
-    "category": "Mamífero",
-    "habitat": "Bosques y zonas rocosas de África, Asia y Europa",
-    "diet": "Herbívoro (raíces y corteza)"
-  },
-  {
-    "wikiTitle": "Murciélago común",
-    "scientificName": "Pipistrellus pipistrellus",
-    "category": "Mamífero",
-    "habitat": "Bosques, parques y edificios de Europa",
-    "diet": "Carnívoro (insectos)"
-  },
-  {
-    "wikiTitle": "Foca común",
-    "scientificName": "Phoca vitulina",
-    "category": "Mamífero",
-    "habitat": "Costas del Atlántico y Pacífico norte",
-    "diet": "Carnívoro (peces y crustáceos)"
-  },
-  {
-    "wikiTitle": "Loro gris africano",
-    "scientificName": "Psittacus erithacus",
-    "category": "Ave",
-    "habitat": "Bosques de África central y occidental",
-    "diet": "Herbívoro (frutos y semillas)"
-  },
-  {
-    "wikiTitle": "Cisne vulgar",
-    "scientificName": "Cygnus olor",
-    "category": "Ave",
-    "habitat": "Lagos y ríos de Europa y Asia",
-    "diet": "Herbívoro (plantas acuáticas)"
-  },
-  {
-    "wikiTitle": "Emú",
-    "scientificName": "Dromaius novaehollandiae",
-    "category": "Ave",
-    "habitat": "Sabanas y bosques abiertos de Australia",
-    "diet": "Omnívoro"
-  },
-  {
-    "wikiTitle": "Garza real",
-    "scientificName": "Ardea cinerea",
-    "category": "Ave",
-    "habitat": "Humedales de Europa, Asia y África",
-    "diet": "Carnívoro (peces y anfibios)"
-  },
-  {
-    "wikiTitle": "Cormorán grande",
-    "scientificName": "Phalacrocorax carbo",
-    "category": "Ave",
-    "habitat": "Costas, ríos y lagos de Europa, Asia y África",
-    "diet": "Carnívoro (peces)"
-  },
-  {
-    "wikiTitle": "Anaconda verde",
-    "scientificName": "Eunectes murinus",
-    "category": "Reptil",
-    "habitat": "Pantanos y ríos de la Amazonía",
-    "diet": "Carnívoro"
-  },
-  {
-    "wikiTitle": "Cobra real",
-    "scientificName": "Ophiophagus hannah",
-    "category": "Reptil",
-    "habitat": "Bosques del sur y sureste de Asia",
-    "diet": "Carnívoro (serpientes y otros vertebrados)"
-  },
-  {
-    "wikiTitle": "Iguana verde",
-    "scientificName": "Iguana iguana",
-    "category": "Reptil",
-    "habitat": "Bosques tropicales de América Central y del Sur",
-    "diet": "Herbívoro"
-  },
-  {
-    "wikiTitle": "Tritón crestado",
-    "scientificName": "Triturus cristatus",
-    "category": "Anfibio",
-    "habitat": "Charcas y bosques húmedos de Europa",
-    "diet": "Carnívoro (invertebrados)"
-  },
-  {
-    "wikiTitle": "Atún rojo",
-    "scientificName": "Thunnus thynnus",
-    "category": "Pez",
-    "habitat": "Atlántico y Mediterráneo",
-    "diet": "Carnívoro (peces y cefalópodos)"
-  },
-  {
-    "wikiTitle": "Pez globo",
-    "scientificName": "Tetraodontidae",
-    "category": "Pez",
-    "habitat": "Arrecifes y aguas tropicales",
-    "diet": "Omnívoro"
-  },
-  {
-    "wikiTitle": "Estrella de mar",
-    "scientificName": "Asteroidea",
-    "category": "Invertebrado",
-    "habitat": "Fondos marinos de todos los océanos",
-    "diet": "Carnívoro (moluscos y otros invertebrados)"
-  },
-  {
-    "wikiTitle": "Langosta europea",
-    "scientificName": "Palinurus elephas",
-    "category": "Invertebrado",
-    "habitat": "Fondos rocosos del Atlántico oriental y Mediterráneo",
-    "diet": "Omnívoro"
-  },
-  {
-    "wikiTitle": "Hormiga",
-    "scientificName": "Formicidae",
-    "category": "Invertebrado",
-    "habitat": "Casi todos los hábitats terrestres",
-    "diet": "Omnívoro"
-  },
-  {
-    "wikiTitle": "Araña de patas largas",
-    "scientificName": "Pholcidae",
-    "category": "Invertebrado",
-    "habitat": "Cuevas, casas y edificios de todo el mundo",
-    "diet": "Carnívoro (insectos)"
-  },
-  {
-    "wikiTitle": "Caracol de tierra",
-    "scientificName": "Helix pomatia",
-    "category": "Invertebrado",
-    "habitat": "Bosques y jardines de Europa",
-    "diet": "Herbívoro (plantas y hongos)"
-  },
-  {
-    "wikiTitle": "Nutria europea",
-    "scientificName": "Lutra lutra",
-    "category": "Mamífero",
-    "habitat": "Ríos, lagos y costas de Europa y Asia",
-    "diet": "Carnívoro (peces y anfibios)"
-  }
+  {"wikiTitle": "Panthera leo", "scientificName": "Panthera leo", "category": "Mamífero", "habitat": "Sabanas africanas", "diet": "Carnívoro"},
+  {"wikiTitle": "Loxodonta africana", "scientificName": "Loxodonta africana", "category": "Mamífero", "habitat": "Sabanas africanas", "diet": "Herbívoro"},
+  {"wikiTitle": "Ursus maritimus", "scientificName": "Ursus maritimus", "category": "Mamífero", "habitat": "Ártico", "diet": "Carnívoro"},
+  {"wikiTitle": "Giraffa camelopardalis", "scientificName": "Giraffa camelopardalis", "category": "Mamífero", "habitat": "Sabanas africanas", "diet": "Herbívoro"},
+  {"wikiTitle": "Ailuropoda melanoleuca", "scientificName": "Ailuropoda melanoleuca", "category": "Mamífero", "habitat": "Bosques de bambú", "diet": "Herbívoro"},
+  {"wikiTitle": "Tursiops truncatus", "scientificName": "Tursiops truncatus", "category": "Mamífero", "habitat": "Océanos templados", "diet": "Carnívoro"},
+  {"wikiTitle": "Canis lupus", "scientificName": "Canis lupus", "category": "Mamífero", "habitat": "Bosques y montañas", "diet": "Carnívoro"},
+  {"wikiTitle": "Macropus", "scientificName": "Macropus", "category": "Mamífero", "habitat": "Australia", "diet": "Herbívoro"},
+  {"wikiTitle": "Gorilla beringei", "scientificName": "Gorilla beringei", "category": "Mamífero", "habitat": "Montañas de África central", "diet": "Herbívoro"},
+  {"wikiTitle": "Balaenoptera musculus", "scientificName": "Balaenoptera musculus", "category": "Mamífero", "habitat": "Océanos", "diet": "Carnívoro"},
+  {"wikiTitle": "Struthio camelus", "scientificName": "Struthio camelus", "category": "Ave", "habitat": "Sabanas africanas", "diet": "Omnívoro"},
+  {"wikiTitle": "Aquila chrysaetos", "scientificName": "Aquila chrysaetos", "category": "Ave", "habitat": "Montañas", "diet": "Carnívoro"},
+  {"wikiTitle": "Pavo cristatus", "scientificName": "Pavo cristatus", "category": "Ave", "habitat": "Bosques tropicales", "diet": "Omnívoro"},
+  {"wikiTitle": "Phoenicopterus roseus", "scientificName": "Phoenicopterus roseus", "category": "Ave", "habitat": "Lagunas", "diet": "Omnívoro"},
+  {"wikiTitle": "Aptenodytes forsteri", "scientificName": "Aptenodytes forsteri", "category": "Ave", "habitat": "Antártida", "diet": "Carnívoro"},
+  {"wikiTitle": "Falco peregrinus", "scientificName": "Falco peregrinus", "category": "Ave", "habitat": "Casi todo el mundo", "diet": "Carnívoro"},
+  {"wikiTitle": "Ramphastos toco", "scientificName": "Ramphastos toco", "category": "Ave", "habitat": "Bosques tropicales", "diet": "Omnívoro"},
+  {"wikiTitle": "Psittacus erithacus", "scientificName": "Psittacus erithacus", "category": "Ave", "habitat": "Bosques africanos", "diet": "Herbívoro"},
+  {"wikiTitle": "Cygnus olor", "scientificName": "Cygnus olor", "category": "Ave", "habitat": "Lagos y ríos", "diet": "Herbívoro"},
+  {"wikiTitle": "Vultur gryphus", "scientificName": "Vultur gryphus", "category": "Ave", "habitat": "Andes", "diet": "Carnívoro"},
+  {"wikiTitle": "Crocodylus niloticus", "scientificName": "Crocodylus niloticus", "category": "Reptil", "habitat": "Ríos y lagos de África", "diet": "Carnívoro"},
+  {"wikiTitle": "Varanus komodoensis", "scientificName": "Varanus komodoensis", "category": "Reptil", "habitat": "Islas de Indonesia", "diet": "Carnívoro"},
+  {"wikiTitle": "Chamaeleo chamaeleon", "scientificName": "Chamaeleo chamaeleon", "category": "Reptil", "habitat": "Bosques mediterráneos", "diet": "Carnívoro"},
+  {"wikiTitle": "Crotalus", "scientificName": "Crotalus", "category": "Reptil", "habitat": "Desiertos y bosques", "diet": "Carnívoro"},
+  {"wikiTitle": "Iguana iguana", "scientificName": "Iguana iguana", "category": "Reptil", "habitat": "Bosques tropicales", "diet": "Herbívoro"},
+  {"wikiTitle": "Chelonia mydas", "scientificName": "Chelonia mydas", "category": "Reptil", "habitat": "Océanos tropicales", "diet": "Herbívoro"},
+  {"wikiTitle": "Eunectes murinus", "scientificName": "Eunectes murinus", "category": "Reptil", "habitat": "Amazonas", "diet": "Carnívoro"},
+  {"wikiTitle": "Alligator mississippiensis", "scientificName": "Alligator mississippiensis", "category": "Reptil", "habitat": "Pantanos de EE.UU.", "diet": "Carnívoro"},
+  {"wikiTitle": "Geochelone sulcata", "scientificName": "Geochelone sulcata", "category": "Reptil", "habitat": "Sahara", "diet": "Herbívoro"},
+  {"wikiTitle": "Pythonidae", "scientificName": "Pythonidae", "category": "Reptil", "habitat": "África y Asia", "diet": "Carnívoro"},
+  {"wikiTitle": "Salamandra salamandra", "scientificName": "Salamandra salamandra", "category": "Anfibio", "habitat": "Bosques húmedos", "diet": "Carnívoro"},
+  {"wikiTitle": "Bufo bufo", "scientificName": "Bufo bufo", "category": "Anfibio", "habitat": "Bosques y jardines", "diet": "Carnívoro"},
+  {"wikiTitle": "Dendrobatidae", "scientificName": "Dendrobatidae", "category": "Anfibio", "habitat": "Selvas tropicales", "diet": "Carnívoro"},
+  {"wikiTitle": "Carcharodon carcharias", "scientificName": "Carcharodon carcharias", "category": "Pez", "habitat": "Océanos", "diet": "Carnívoro"},
+  {"wikiTitle": "Hippocampus", "scientificName": "Hippocampus", "category": "Pez", "habitat": "Océanos", "diet": "Carnívoro"},
+  {"wikiTitle": "Mobula birostris", "scientificName": "Mobula birostris", "category": "Pez", "habitat": "Océanos", "diet": "Carnívoro"},
+  {"wikiTitle": "Amphiprioninae", "scientificName": "Amphiprioninae", "category": "Pez", "habitat": "Arrecifes", "diet": "Omnívoro"},
+  {"wikiTitle": "Thunnus thynnus", "scientificName": "Thunnus thynnus", "category": "Pez", "habitat": "Atlántico", "diet": "Carnívoro"},
+  {"wikiTitle": "Tetraodontidae", "scientificName": "Tetraodontidae", "category": "Pez", "habitat": "Océanos", "diet": "Omnívoro"},
+  {"wikiTitle": "Apis mellifera", "scientificName": "Apis mellifera", "category": "Invertebrado", "habitat": "Todo el mundo", "diet": "Herbívoro"},
+  {"wikiTitle": "Coccinellidae", "scientificName": "Coccinellidae", "category": "Invertebrado", "habitat": "Todo el mundo", "diet": "Carnívoro"},
+  {"wikiTitle": "Scorpiones", "scientificName": "Scorpiones", "category": "Invertebrado", "habitat": "Desiertos y selvas", "diet": "Carnívoro"},
+  {"wikiTitle": "Paguroidea", "scientificName": "Paguroidea", "category": "Invertebrado", "habitat": "Costas", "diet": "Omnívoro"},
+  {"wikiTitle": "Scyphozoa", "scientificName": "Scyphozoa", "category": "Invertebrado", "habitat": "Océanos", "diet": "Carnívoro"},
+  {"wikiTitle": "Loligo vulgaris", "scientificName": "Loligo vulgaris", "category": "Invertebrado", "habitat": "Océanos", "diet": "Carnívoro"},
+  {"wikiTitle": "Danaus plexippus", "scientificName": "Danaus plexippus", "category": "Invertebrado", "habitat": "América", "diet": "Herbívoro"},
+  {"wikiTitle": "Octopoda", "scientificName": "Octopoda", "category": "Invertebrado", "habitat": "Océanos", "diet": "Carnívoro"},
+  {"wikiTitle": "Helix pomatia", "scientificName": "Helix pomatia", "category": "Invertebrado", "habitat": "Jardines", "diet": "Herbívoro"},
+  {"wikiTitle": "Asteroidea", "scientificName": "Asteroidea", "category": "Invertebrado", "habitat": "Fondos marinos", "diet": "Carnívoro"},
+  {"wikiTitle": "Formicidae", "scientificName": "Formicidae", "category": "Invertebrado", "habitat": "Todo el mundo", "diet": "Omnívoro"}
 ]
