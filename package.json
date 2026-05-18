@@ -6,9 +6,23 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pb:download": "node scripts/download-pb.mjs",
+    "pb:serve": "npm run pb:download && node scripts/serve-pb.mjs",
+    "pb:admin": "npm run pb:download && node --env-file=.env scripts/setup-admin.mjs",
+    "seed": "tsx --env-file=.env scripts/seed.ts",
+    "import:animals": "tsx --env-file=.env scripts/import-animals.ts",
+    "import:animals:extra": "tsx --env-file=.env scripts/import-animals.ts --extra-only",
+    "import:animals:wikipedia": "tsx --env-file=.env scripts/import-animals.ts --wikipedia",
+    "validate:animals": "tsx scripts/validate-catalog.ts",
+    "validate:animals:extra": "tsx scripts/validate-catalog.ts --extra-only",
+    "validate:animals:strict": "tsx scripts/validate-catalog.ts --strict"
+  },
+  "dependencies": {
+    "pocketbase": "^0.25.2"
   },
   "devDependencies": {
+    "tsx": "^4.19.3",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }

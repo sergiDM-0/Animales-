@@ -1,8 +1,111 @@
 # Documentación del proyecto
 
-Este proyecto es una “enciclopedia de animales” en **HTML + CSS + TypeScript** usando **Vite** como servidor de desarrollo y herramienta de build.
+Este proyecto es una “enciclopedia de animales” en **HTML + CSS + TypeScript** usando **Vite** como frontend y **[PocketBase](https://pocketbase.io)** (MIT, software libre) como API y base de datos (SQLite).
 
 La carpeta `dist/` y sus `assets/` son **salida generada** por `vite build` (no se editan a mano).
+
+---
+
+## Inicio rápido (PocketBase + frontend)
+
+### 1. Dependencias
+
+```bash
+npm install
+cp .env.example .env
+```
+
+Edita `.env` y define `PB_ADMIN_EMAIL` y `PB_ADMIN_PASSWORD` (mínimo 8 caracteres).
+
+### 2. Backend (terminal 1)
+
+```bash
+npm run pb:admin    # crea/actualiza el usuario admin (solo la primera vez)
+npm run pb:serve      # API en http://127.0.0.1:8090 · panel en http://127.0.0.1:8090/_/
+```
+
+En otra terminal, con PocketBase en marcha:
+
+```bash
+npm run seed        # importa los animales de src/data.ts a la base de datos
+```
+
+### 3. Frontend (terminal 2)
+
+```bash
+npm run dev         # http://localhost:5173
+```
+
+La interfaz (grid, filtros, diálogo) es la misma; los datos vienen de la API.
+
+### Flujo de datos (almacenar → traer → mostrar)
+
+```
+npm run seed  →  guarda animales en SQLite (backend/pb_data)
+                      ↑
+npm run pb:serve  →  PocketBase expone API REST (:8090)
+                      ↑
+npm run dev  →  el sitio llama loadAnimals() y pinta el grid
+```
+
+1. **Almacenar:** `npm run seed` (o el panel http://127.0.0.1:8090/_/) escribe en la base de datos.
+2. **Traer:** `src/api.ts` pide `GET /api/collections/animals/records` a PocketBase.
+3. **Mostrar:** `src/main.ts` renderiza tarjetas y el diálogo con esos datos.
+
+En la cabecera del sitio verás cuántos animales se cargaron desde la base de datos y un botón **Actualizar** para volver a leer la API.
+
+### Añadir muchos animales por API
+
+Con PocketBase en marcha:
+
+```bash
+npm run import:animals          # catálogo base + extra (~64 en total)
+npm run import:animals:extra    # solo src/animals-extra.json
+npm run import:animals:wikipedia  # fichas desde Wikipedia (wiki-import-list.json)
+```
+
+Edita `src/animals-extra.json` o `src/wiki-import-list.json` y vuelve a ejecutar; no se duplican registros (mismo nombre científico).
+
+### Validación antes de guardar
+
+Antes de insertar en la base de datos, `scripts/validate-animal.ts` comprueba:
+
+- Que la **descripción** hable del animal (nombre o género científico).
+- Que la **imagen** exista, sea realmente una imagen y no un placeholder.
+- Que la imagen **no sea genérica** (misma URL en varios animales, Unsplash/Pexels sin relación con el nombre).
+- Coherencia con el **resumen de Wikipedia** (si hay `wikiUrl`).
+
+```bash
+npm run validate:animals:extra    # revisar sin guardar
+npm run import:animals:extra      # valida y luego guarda (rechaza los incorrectos)
+npm run import:animals:extra -- --fix   # sustituye imagen por la de Wikipedia si falla
+npm run import:animals:extra -- --skip-validation   # omitir validación
+```
+
+### Scripts útiles
+
+| Comando | Descripción |
+|---------|-------------|
+| `npm run pb:download` | Descarga el binario de PocketBase en `backend/` |
+| `npm run pb:serve` | Arranca PocketBase (aplica migraciones en `backend/pb_migrations/`) |
+| `npm run pb:admin` | Crea admin desde `.env` |
+| `npm run seed` | Puebla la colección `animals` (solo si está vacía) |
+| `npm run import:animals` | Importa catálogo base + extra vía API (omite duplicados) |
+| `npm run import:animals:extra` | Solo los animales nuevos de `src/animals-extra.json` |
+| `npm run import:animals:wikipedia` | Descarga fichas de Wikipedia y las guarda en la BD |
+| `npm run validate:animals:extra` | Revisa el catálogo sin guardar (imagen + contenido) |
+| `npm run dev` | Frontend Vite |
+| `npm run build` | Build de producción del frontend |
+
+### Estructura backend
+
+- **`backend/pocketbase`**: ejecutable (no versionado; se descarga con `pb:download`).
+- **`backend/pb_migrations/`**: esquema de la colección `animals`.
+- **`backend/pb_data/`**: SQLite y datos (gitignored).
+- **`src/api.ts`**: cliente PocketBase en el frontend.
+- **`src/data.ts`**: datos iniciales solo para el seed.
+
+Variable de entorno del frontend: `VITE_POCKETBASE_URL` (por defecto `http://127.0.0.1:8090` en `.env.development`).
 
 ---
 
@@ -11,7 +114,9 @@ La carpeta `dist/` y sus `assets/` son **salida generada** por `vite build` (no 
 - **`index.html`**: HTML base (punto de entrada de la app en desarrollo).
 - **`src/`**: código fuente (TypeScript, CSS, datos).
   - **`src/main.ts`**: lógica de UI (render, filtros, diálogo).
-  - **`src/data.ts`**: datos y tipos de animales.
+  - **`src/api.ts`**: carga de animales desde PocketBase.
+  - **`src/types.ts`**: tipos TypeScript (`Animal`).
+  - **`src/data.ts`**: datos iniciales para el script `seed`.
   - **`src/style.css`**: estilos (layout, tarjetas, botones, diálogo).
 - **`vite.config.ts`**: configuración mínima de Vite.
 - **`tsconfig.json`**: configuración del compilador TypeScript.
@@ -45,25 +150,15 @@ Estos elementos se buscan desde `src/main.ts` para montar la UI:
 
 ---
 
-## `src/data.ts`
+## `src/types.ts` y `src/data.ts`
 
-Archivo: `animales/src/data.ts`
-
-### Responsabilidadd
-
-Contiene:
-
-- **`Animal`**: interfaz TypeScript con el “shape” de los datos.
-- **`animals`**: array con los animales (id, nombre, descripción, etc.).
+- **`src/types.ts`**: interfaz `Animal` y tipo `AnimalCategory`.
+- **`src/data.ts`**: array `animals` (sin `id`) usado solo por `npm run seed` para poblar PocketBase.
 
 ### Detalles importantes
 
-- El campo **`category`** es un *union type*:
-  - `"Mamífero" | "Ave" | "Reptil" | "Anfibio" | "Pez" | "Invertebrado"`
-- En `src/main.ts` se usa para:
-  - calcular categorías únicas (filtros)
-  - filtrar el grid por categoría
-  - renderizar la “pill” de categoría en tarjeta y detalle
+- El campo **`category`** es un *union type* en `types.ts`.
+- En runtime, `src/main.ts` carga los animales con `loadAnimals()` desde `src/api.ts` (PocketBase).
 
 ---
 
@@ -73,8 +168,8 @@ Archivo: `animales/src/main.ts`
 
 ### Responsabilidad general
 
-- Importa `animals` y `Animal` desde `./data`.
-- Construye las categorías disponibles.
+- Carga `animals` desde PocketBase al iniciar (`loadAnimals()`).
+- Construye las categorías disponibles a partir de los datos cargados.
 - Renderiza:
   - **filtros** (chips)
   - **grid** de tarjetas
@@ -240,7 +335,7 @@ Archivo: `animales/dist/assets/index-0h3dzHZ6.js`
 
 Es JavaScript:
 
-- **bundleado** (incluye el código de `src/main.ts` y `src/data.ts`)
+- **bundleado** (incluye el código de `src/main.ts`, `src/api.ts`, etc.; ya no incluye el array estático de animales)
 - **minificado**
 - con una parte inicial que ayuda a compatibilidad con `modulepreload`
 

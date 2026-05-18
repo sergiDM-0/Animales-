@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+.env.local
+backend/pb_data/
+backend/pocketbase
+backend/pocketbase.exe
+backend/pocketbase.zip

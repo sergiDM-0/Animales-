@@ -1,0 +1,177 @@
+[
+  {
+    "wikiTitle": "Ciervo rojo",
+    "scientificName": "Cervus elaphus",
+    "category": "Mamífero",
+    "habitat": "Bosques y praderas de Europa, Asia y norte de África",
+    "diet": "Herbívoro"
+  },
+  {
+    "wikiTitle": "Alce",
+    "scientificName": "Alces alces",
+    "category": "Mamífero",
+    "habitat": "Bosques boreales y pantanos del norte de Europa, Asia y América",
+    "diet": "Herbívoro"
+  },
+  {
+    "wikiTitle": "Castor europeo",
+    "scientificName": "Castor fiber",
+    "category": "Mamífero",
+    "habitat": "Ríos y lagos de Europa y Asia",
+    "diet": "Herbívoro (corteza y ramas)"
+  },
+  {
+    "wikiTitle": "Mapache",
+    "scientificName": "Procyon lotor",
+    "category": "Mamífero",
+    "habitat": "Bosques y zonas urbanas de América",
+    "diet": "Omnívoro"
+  },
+  {
+    "wikiTitle": "Bisonte americano",
+    "scientificName": "Bison bison",
+    "category": "Mamífero",
+    "habitat": "Praderas de América del Norte",
+    "diet": "Herbívoro"
+  },
+  {
+    "wikiTitle": "Puercoespín",
+    "scientificName": "Hystrix cristata",
+    "category": "Mamífero",
+    "habitat": "Bosques y zonas rocosas de África, Asia y Europa",
+    "diet": "Herbívoro (raíces y corteza)"
+  },
+  {
+    "wikiTitle": "Murciélago común",
+    "scientificName": "Pipistrellus pipistrellus",
+    "category": "Mamífero",
+    "habitat": "Bosques, parques y edificios de Europa",
+    "diet": "Carnívoro (insectos)"
+  },
+  {
+    "wikiTitle": "Foca común",
+    "scientificName": "Phoca vitulina",
+    "category": "Mamífero",
+    "habitat": "Costas del Atlántico y Pacífico norte",
+    "diet": "Carnívoro (peces y crustáceos)"
+  },
+  {
+    "wikiTitle": "Loro gris africano",
+    "scientificName": "Psittacus erithacus",
+    "category": "Ave",
+    "habitat": "Bosques de África central y occidental",
+    "diet": "Herbívoro (frutos y semillas)"
+  },
+  {
+    "wikiTitle": "Cisne vulgar",
+    "scientificName": "Cygnus olor",
+    "category": "Ave",
+    "habitat": "Lagos y ríos de Europa y Asia",
+    "diet": "Herbívoro (plantas acuáticas)"
+  },
+  {
+    "wikiTitle": "Emú",
+    "scientificName": "Dromaius novaehollandiae",
+    "category": "Ave",
+    "habitat": "Sabanas y bosques abiertos de Australia",
+    "diet": "Omnívoro"
+  },
+  {
+    "wikiTitle": "Garza real",
+    "scientificName": "Ardea cinerea",
+    "category": "Ave",
+    "habitat": "Humedales de Europa, Asia y África",
+    "diet": "Carnívoro (peces y anfibios)"
+  },
+  {
+    "wikiTitle": "Cormorán grande",
+    "scientificName": "Phalacrocorax carbo",
+    "category": "Ave",
+    "habitat": "Costas, ríos y lagos de Europa, Asia y África",
+    "diet": "Carnívoro (peces)"
+  },
+  {
+    "wikiTitle": "Anaconda verde",
+    "scientificName": "Eunectes murinus",
+    "category": "Reptil",
+    "habitat": "Pantanos y ríos de la Amazonía",
+    "diet": "Carnívoro"
+  },
+  {
+    "wikiTitle": "Cobra real",
+    "scientificName": "Ophiophagus hannah",
+    "category": "Reptil",
+    "habitat": "Bosques del sur y sureste de Asia",
+    "diet": "Carnívoro (serpientes y otros vertebrados)"
+  },
+  {
+    "wikiTitle": "Iguana verde",
+    "scientificName": "Iguana iguana",
+    "category": "Reptil",
+    "habitat": "Bosques tropicales de América Central y del Sur",
+    "diet": "Herbívoro"
+  },
+  {
+    "wikiTitle": "Tritón crestado",
+    "scientificName": "Triturus cristatus",
+    "category": "Anfibio",
+    "habitat": "Charcas y bosques húmedos de Europa",
+    "diet": "Carnívoro (invertebrados)"
+  },
+  {
+    "wikiTitle": "Atún rojo",
+    "scientificName": "Thunnus thynnus",
+    "category": "Pez",
+    "habitat": "Atlántico y Mediterráneo",
+    "diet": "Carnívoro (peces y cefalópodos)"
+  },
+  {
+    "wikiTitle": "Pez globo",
+    "scientificName": "Tetraodontidae",
+    "category": "Pez",
+    "habitat": "Arrecifes y aguas tropicales",
+    "diet": "Omnívoro"
+  },
+  {
+    "wikiTitle": "Estrella de mar",
+    "scientificName": "Asteroidea",
+    "category": "Invertebrado",
+    "habitat": "Fondos marinos de todos los océanos",
+    "diet": "Carnívoro (moluscos y otros invertebrados)"
+  },
+  {
+    "wikiTitle": "Langosta europea",
+    "scientificName": "Palinurus elephas",
+    "category": "Invertebrado",
+    "habitat": "Fondos rocosos del Atlántico oriental y Mediterráneo",
+    "diet": "Omnívoro"
+  },
+  {
+    "wikiTitle": "Hormiga",
+    "scientificName": "Formicidae",
+    "category": "Invertebrado",
+    "habitat": "Casi todos los hábitats terrestres",
+    "diet": "Omnívoro"
+  },
+  {
+    "wikiTitle": "Araña de patas largas",
+    "scientificName": "Pholcidae",
+    "category": "Invertebrado",
+    "habitat": "Cuevas, casas y edificios de todo el mundo",
+    "diet": "Carnívoro (insectos)"
+  },
+  {
+    "wikiTitle": "Caracol de tierra",
+    "scientificName": "Helix pomatia",
+    "category": "Invertebrado",
+    "habitat": "Bosques y jardines de Europa",
+    "diet": "Herbívoro (plantas y hongos)"
+  },
+  {
+    "wikiTitle": "Nutria europea",
+    "scientificName": "Lutra lutra",
+    "category": "Mamífero",
+    "habitat": "Ríos, lagos y costas de Europa y Asia",
+    "diet": "Carnívoro (peces y anfibios)"
+  }
+]

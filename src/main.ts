@@ -1,6 +1,6 @@
-import { animals, type Animal } from "./data"
+import { getApiBaseUrl, loadAnimals } from "./api"
+import type { Animal } from "./types"
 
-//desactiva el filtro y muestra todos los animales
 const ALL = "Todos"
 
 function escapeHtml(text: string): string {
@@ -9,21 +9,7 @@ function escapeHtml(text: string): string {
   return div.innerHTML
 }
 
-const categories = [
-  ALL,
-  ...Array.from(new Set(animals.map((a) => a.category))),
-] as string[]
-
-let currentFilter = ALL
-
-// Esta parte del código obtiene referencias a los elementos principales del DOM necesarios para la interacción de la interfaz:
-// - filtersEl: el contenedor de los botones de filtro de categorías (#filters)
-// - gridEl: la cuadrícula donde se muestran las tarjetas de animales (#grid)
-// - dialogEl: el cuadro de diálogo que muestra la información detallada de un animal (#detail)
-// - detailBodyEl: el contenido principal del diálogo de detalle (#detail-body)
-// - detailWikiEl: el enlace a Wikipedia dentro del diálogo de detalle (#detail-wiki)
-// - detailCloseEl: el botón para cerrar el diálogo de detalle (#detail-close)
-
+const dbStatusEl = document.querySelector<HTMLDivElement>("#db-status")!
 const filtersEl = document.querySelector<HTMLDivElement>("#filters")!
 const gridEl = document.querySelector<HTMLDivElement>("#grid")!
 const dialogEl = document.querySelector<HTMLDialogElement>("#detail")!
@@ -31,15 +17,20 @@ const detailBodyEl = document.querySelector<HTMLDivElement>("#detail-body")!
 const detailWikiEl = document.querySelector<HTMLAnchorElement>("#detail-wiki")!
 const detailCloseEl = document.querySelector<HTMLButtonElement>("#detail-close")!
 
-//detecta que filtro se ha seleccionado y muestra solo esos animales 
+let animals: Animal[] = []
+let currentFilter = ALL
+
+function categories(): string[] {
+  return [ALL, ...Array.from(new Set(animals.map((a) => a.category)))]
+}
+
 function filtered(): Animal[] {
   if (currentFilter === ALL) return animals
   return animals.filter((a) => a.category === currentFilter)
 }
 
-//renderiza los filtros en el DOM
 function renderFilters(): void {
-  filtersEl.innerHTML = categories
+  filtersEl.innerHTML = categories()
     .map((cat) => {
       const active = cat === currentFilter ? " is-active" : ""
       return `<button type="button" class="chip${active}" data-cat="${escapeHtml(cat)}">${escapeHtml(cat)}</button>`
@@ -55,7 +46,6 @@ function renderFilters(): void {
   })
 }
 
-//renderiza el HTML de cada animal en la cuadrícula
 function cardHtml(a: Animal): string {
   const desc = a.description.length > 160 ? `${a.description.slice(0, 160)}…` : a.description
   return `
@@ -77,9 +67,19 @@ function cardHtml(a: Animal): string {
   `
 }
 
-//renderiza la cuadrícula en el DOM
 function renderGrid(): void {
-  gridEl.innerHTML = filtered().map(cardHtml).join("")
+  if (animals.length === 0) {
+    gridEl.innerHTML = `<p class="status-message">No hay animales en la base de datos. Ejecuta <code>npm run seed</code>.</p>`
+    return
+  }
+
+  const list = filtered()
+  if (list.length === 0) {
+    gridEl.innerHTML = `<p class="status-message">Ningún animal en esta categoría.</p>`
+    return
+  }
+
+  gridEl.innerHTML = list.map(cardHtml).join("")
   gridEl.querySelectorAll<HTMLButtonElement>("[data-open]").forEach((btn) => {
     btn.addEventListener("click", () => {
       const id = btn.dataset.open
@@ -89,8 +89,7 @@ function renderGrid(): void {
   })
 }
 
-//muestra los detalles de un animal en el diálogo
-  function openDetail(a: Animal): void {
+function openDetail(a: Animal): void {
   detailWikiEl.href = a.wikiUrl
   detailBodyEl.innerHTML = `
     <h2 class="detail-title">${escapeHtml(a.name)}</h2>
@@ -106,7 +105,39 @@ function renderGrid(): void {
   dialogEl.showModal()
 }
 
-//cierra el diálogo
+function showDbStatusLoading(): void {
+  dbStatusEl.className = "db-status db-status--loading"
+  dbStatusEl.textContent = "Conectando con la API y leyendo la base de datos…"
+}
+
+function showDbStatusOk(count: number): void {
+  dbStatusEl.className = "db-status db-status--ok"
+  dbStatusEl.innerHTML = `
+    <span><strong>${count}</strong> animales cargados desde la base de datos (SQLite · PocketBase)</span>
+    <span class="db-status__url">${escapeHtml(getApiBaseUrl())}</span>
+    <button type="button" class="db-status__reload" id="reload-db">Actualizar</button>
+  `
+  document.querySelector<HTMLButtonElement>("#reload-db")?.addEventListener("click", () => {
+    void fetchFromDatabase()
+  })
+}
+
+function showDbStatusError(message: string): void {
+  dbStatusEl.className = "db-status db-status--error"
+  dbStatusEl.textContent = message
+}
+
+function showLoading(): void {
+  showDbStatusLoading()
+  filtersEl.innerHTML = ""
+  gridEl.innerHTML = `<p class="status-message status-message--loading">Cargando animales desde la base de datos…</p>`
+}
+
+function showError(message: string): void {
+  filtersEl.innerHTML = ""
+  gridEl.innerHTML = `<p class="status-message status-message--error">${escapeHtml(message)}</p>`
+}
+
 detailCloseEl.addEventListener("click", () => dialogEl.close())
 
 dialogEl.addEventListener("click", (e) => {
@@ -114,5 +145,23 @@ dialogEl.addEventListener("click", (e) => {
   if (t.nodeName === "DIALOG") dialogEl.close()
 })
 
-renderFilters()
-renderGrid()
+async function fetchFromDatabase(): Promise<void> {
+  showLoading()
+  try {
+    animals = await loadAnimals()
+    currentFilter = ALL
+    showDbStatusOk(animals.length)
+    renderFilters()
+    renderGrid()
+  } catch (err) {
+    const detail = err instanceof Error ? err.message : "Error desconocido"
+    showDbStatusError(
+      `Sin conexión a la API. Arranca PocketBase (npm run pb:serve) y ejecuta npm run seed si la base está vacía.`,
+    )
+    const hint =
+      "¿Está PocketBase en marcha? Ejecuta <code>npm run pb:serve</code> y luego <code>npm run seed</code>."
+    showError(`No se pudieron cargar los animales (${escapeHtml(detail)}). ${hint}`)
+  }
+}
+
+void fetchFromDatabase()

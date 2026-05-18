@@ -52,15 +52,111 @@ body {
 
 /* Estilos para la descripción o texto introductorio */
 .lede {
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+/* Estado de conexión con la API / base de datos */
+.db-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin: 0 0 1rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.db-status--ok {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.db-status--ok::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.db-status--loading::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--muted);
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.db-status--error {
+  color: #991b1b;
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.db-status__reload {
+  margin-left: auto;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+.db-status__reload:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.db-status__url {
+  font-size: 0.75rem;
+  opacity: 0.85;
+  word-break: break-all;
 }
 
 /* Padding específico para el contenedor del encabezado */
 .site-header .wrap {
   padding-top: 1.75rem;
   padding-bottom: 1.25rem;
+}
+
+/* Mensajes de carga, error o lista vacía */
+.status-message {
+  grid-column: 1 / -1;
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.status-message--loading {
+  color: var(--text);
+}
+
+.status-message--error {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.status-message code {
+  font-size: 0.85em;
+  background: rgb(0 0 0 / 0.06);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
 }
 
 /* Contenedor para los botones de filtro */

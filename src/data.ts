@@ -1,18 +1,8 @@
-export interface Animal {
-  id: string
-  name: string
-  scientificName: string
-  description: string
-  habitat: string
-  diet: string
-  image: string
-  wikiUrl: string
-  category: "Mamífero" | "Ave" | "Reptil" | "Anfibio" | "Pez" | "Invertebrado"
-}
+import type { AnimalInput } from "./types"
 
-export const animals: Animal[] = [
+/** Datos iniciales para el script de seed (no se usa en la app en runtime). */
+export const animals: AnimalInput[] = [
   {
-    id: "1",
     name: "León",
     scientificName: "Panthera leo",
     description:
@@ -25,7 +15,6 @@ export const animals: Animal[] = [
     category: "Mamífero",
   },
   {
-    id: "2",
     name: "Elefante Africano",
     scientificName: "Loxodonta africana",
     description:
@@ -38,7 +27,6 @@ export const animals: Animal[] = [
     category: "Mamífero",
   },
   {
-    id: "3",
     name: "Pingüino Emperador",
     scientificName: "Aptenodytes forsteri",
     description:
@@ -51,7 +39,6 @@ export const animals: Animal[] = [
     category: "Ave",
   },
   {
-    id: "4",
     name: "Tigre de Bengala",
     scientificName: "Panthera tigris tigris",
     description:
@@ -64,7 +51,6 @@ export const animals: Animal[] = [
     category: "Mamífero",
   },
   {
-    id: "5",
     name: "Águila Real",
     scientificName: "Aquila chrysaetos",
     description:
@@ -77,7 +63,6 @@ export const animals: Animal[] = [
     category: "Ave",
   },
   {
-    id: "6",
     name: "Tortuga Verde",
     scientificName: "Chelonia mydas",
     description:
@@ -90,7 +75,6 @@ export const animals: Animal[] = [
     category: "Reptil",
   },
   {
-    id: "7",
     name: "Panda Gigante",
     scientificName: "Ailuropoda melanoleuca",
     description:
@@ -103,7 +87,6 @@ export const animals: Animal[] = [
     category: "Mamífero",
   },
   {
-    id: "8",
     name: "Delfín Mular",
     scientificName: "Tursiops truncatus",
     description:
@@ -116,189 +99,169 @@ export const animals: Animal[] = [
     category: "Mamífero",
   },
   {
-    
-      id: "9",
-      name: "Rana Arborícola",
-      scientificName: "Hylidae",
-      description: "Las ranas arborícolas son anfibios fascinantes maravillosamente adaptados a la vida en las alturas. Se caracterizan por poseer discos adhesivos en las puntas de sus dedos, lo que les permite trepar y adherirse a troncos, ramas y hojas con gran destreza. Además de sus colores vibrantes, que a menudo utilizan como camuflaje o como señal de advertencia para los depredadores, destacan por sus potentes cantos nocturnos, fundamentales para la comunicación y el apareamiento en los ecosistemas húmedos.",
-      habitat: "Bosques tropicales y subtropicales",
-      diet: "Insectívoro",
-      image: "https://assets.epuzzle.info/puzzle/079/520/original.jpg",
-      wikiUrl: "https://es.wikipedia.org/wiki/Hylidae",
-      category: "Anfibio"
-  
+    name: "Rana Arborícola",
+    scientificName: "Hylidae",
+    description:
+      "Las ranas arborícolas son anfibios fascinantes maravillosamente adaptados a la vida en las alturas. Se caracterizan por poseer discos adhesivos en las puntas de sus dedos, lo que les permite trepar y adherirse a troncos, ramas y hojas con gran destreza. Además de sus colores vibrantes, que a menudo utilizan como camuflaje o como señal de advertencia para los depredadores, destacan por sus potentes cantos nocturnos, fundamentales para la comunicación y el apareamiento en los ecosistemas húmedos.",
+    habitat: "Bosques tropicales y subtropicales",
+    diet: "Insectívoro",
+    image: "https://assets.epuzzle.info/puzzle/079/520/original.jpg",
+    wikiUrl: "https://es.wikipedia.org/wiki/Hylidae",
+    category: "Anfibio",
   },
   {
-    
-      id: "10",
-      name: "Pez Payaso",
-      scientificName: "Amphiprioninae",
-      description: "El pez payaso es un pequeño pez marino mundialmente reconocido por su vibrante color naranja brillante cruzado por franjas blancas. Su rasgo más fascinante es la relación simbiótica que establece con las anémonas de mar: gracias a una capa de mucosa especial en su piel, es inmune a las toxinas de la anémona, usando sus tentáculos como refugio seguro contra depredadores mientras él mismo limpia y protege a la anémona. Además, tienen una jerarquía social única donde todos nacen machos y el individuo dominante puede cambiar de sexo a hembra.",
-      habitat: "Arrecifes de coral en los océanos Índico y Pacífico",
-      diet: "Omnívoro",
-      image: "https://images.unsplash.com/photo-1535591273668-578e31182c4f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGV6JTIwcGF5YXNvfGVufDB8fDB8fHww",
-      wikiUrl: "https://es.wikipedia.org/wiki/Amphiprioninae",
-      category: "Pez"
-  
+    name: "Pez Payaso",
+    scientificName: "Amphiprioninae",
+    description:
+      "El pez payaso es un pequeño pez marino mundialmente reconocido por su vibrante color naranja brillante cruzado por franjas blancas. Su rasgo más fascinante es la relación simbiótica que establece con las anémonas de mar: gracias a una capa de mucosa especial en su piel, es inmune a las toxinas de la anémona, usando sus tentáculos como refugio seguro contra depredadores mientras él mismo limpia y protege a la anémona. Además, tienen una jerarquía social única donde todos nacen machos y el individuo dominante puede cambiar de sexo a hembra.",
+    habitat: "Arrecifes de coral en los océanos Índico y Pacífico",
+    diet: "Omnívoro",
+    image:
+      "https://images.unsplash.com/photo-1535591273668-578e31182c4f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGV6JTIwcGF5YXNvfGVufDB8fDB8fHww",
+    wikiUrl: "https://es.wikipedia.org/wiki/Amphiprioninae",
+    category: "Pez",
   },
   {
-  
-      id: "11",
-      name: "Mariposa Monarca",
-      scientificName: "Danaus plexippus",
-      description: "La mariposa monarca es uno de los insectos más reconocidos del mundo, famosa por sus inconfundibles alas de color naranja brillante con venas negras y bordes punteados de blanco. Esta llamativa coloración es una advertencia para los depredadores de que son venenosas, característica que adquieren en su etapa de oruga al alimentarse exclusivamente de la planta de algodoncillo. Además de su belleza, son mundialmente famosas por su increíble migración anual, realizando un viaje épico de miles de kilómetros desde Estados Unidos y Canadá hasta los bosques de oyamel en México para pasar el invierno.",
-      habitat: "Praderas, campos y bosques de Norteamérica (inverna en los bosques de oyamel de México)",
-      diet: "Herbívoro (Néctar de flores)",
-      image: "https://wallpapers.com/images/hd/male-orange-monarch-butterfly-close-up-shot-84khcbg379em2lue.jpg",
-      wikiUrl: "https://es.wikipedia.org/wiki/Danaus_plexippus",
-      category: "Invertebrado"
-  
+    name: "Mariposa Monarca",
+    scientificName: "Danaus plexippus",
+    description:
+      "La mariposa monarca es uno de los insectos más reconocidos del mundo, famosa por sus inconfundibles alas de color naranja brillante con venas negras y bordes punteados de blanco. Esta llamativa coloración es una advertencia para los depredadores de que son venenosas, característica que adquieren en su etapa de oruga al alimentarse exclusivamente de la planta de algodoncillo. Además de su belleza, son mundialmente famosas por su increíble migración anual, realizando un viaje épico de miles de kilómetros desde Estados Unidos y Canadá hasta los bosques de oyamel en México para pasar el invierno.",
+    habitat:
+      "Praderas, campos y bosques de Norteamérica (inverna en los bosques de oyamel de México)",
+    diet: "Herbívoro (Néctar de flores)",
+    image:
+      "https://wallpapers.com/images/hd/male-orange-monarch-butterfly-close-up-shot-84khcbg379em2lue.jpg",
+    wikiUrl: "https://es.wikipedia.org/wiki/Danaus_plexippus",
+    category: "Invertebrado",
   },
   {
-    id: "12",
     name: "Canguro",
     scientificName: "Macropus",
     description:
       "Los canguros son marsupiales endémicos de Australia, conocidos por sus fuertes patas traseras y su forma de moverse a saltos.",
     habitat: "Llanuras y bosques en Australia",
     diet: "Herbívoro",
-    image:
-      "https://wallpapers.com/images/featured/canguro-9884nd4b35ojdy2t.jpg",
+    image: "https://wallpapers.com/images/featured/canguro-9884nd4b35ojdy2t.jpg",
     wikiUrl: "https://es.wikipedia.org/wiki/Macropus",
     category: "Mamífero",
   },
   {
-    id: "13",
     name: "Colibrí",
     scientificName: "Trochilidae",
     description:
       "Los colibríes son aves pequeñas conocidas por su capacidad de volar en el mismo sitio y por alimentarse principalmente del néctar de las flores.",
     habitat: "América (desde Alaska hasta Tierra del Fuego)",
     diet: "Nectarívoro",
-    image:
-      "https://images.pexels.com/photos/705314/pexels-photo-705314.jpeg",
+    image: "https://images.pexels.com/photos/705314/pexels-photo-705314.jpeg",
     wikiUrl: "https://es.wikipedia.org/wiki/Trochilidae",
     category: "Ave",
   },
   {
-    id: "14",
     name: "Pulpo",
     scientificName: "Octopoda",
     description:
       "Los pulpos son cefalópodos marinos muy inteligentes, conocidos por sus ocho brazos y su capacidad de camuflaje.",
     habitat: "Océanos de todo el mundo",
     diet: "Carnívoro (crustáceos, peces)",
-    image:
-      "https://www.bab.com.ar/wp-content/uploads/2019/04/Pulpo.jpg",
+    image: "https://www.bab.com.ar/wp-content/uploads/2019/04/Pulpo.jpg",
     wikiUrl: "https://es.wikipedia.org/wiki/Octopoda",
     category: "Invertebrado",
   },
   {
-    id: "15",
     name: "Perico",
     scientificName: "Melopsittacus undulatus",
-    description: "El perico, también conocido como periquito, es una pequeña y carismática ave psitaciforme extremadamente popular por su naturaleza sociable, su gran inteligencia y su vistoso plumaje. En estado silvestre destacan por su brillante color verde y amarillo con distintivas ondulaciones negras, aunque hoy en día existen en una enorme variedad de colores. Son aves muy activas, curiosas y ruidosas, famosas por su capacidad para imitar sonidos e incluso palabras humanas. Tienen un fuerte instinto de rebaño, formando vínculos muy estrechos con su pareja y su grupo.",
+    description:
+      "El perico, también conocido como periquito, es una pequeña y carismática ave psitaciforme extremadamente popular por su naturaleza sociable, su gran inteligencia y su vistoso plumaje. En estado silvestre destacan por su brillante color verde y amarillo con distintivas ondulaciones negras, aunque hoy en día existen en una enorme variedad de colores. Son aves muy activas, curiosas y ruidosas, famosas por su capacidad para imitar sonidos e incluso palabras humanas. Tienen un fuerte instinto de rebaño, formando vínculos muy estrechos con su pareja y su grupo.",
     habitat: "Matorrales, sabanas y praderas abiertas (originario de Australia)",
     diet: "Granívoro (Semillas, frutas y verduras)",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Wellensittich_maennchen_wildfarben.jpg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7c/Wellensittich_maennchen_wildfarben.jpg",
     wikiUrl: "https://es.wikipedia.org/wiki/Melopsittacus_undulatus",
-    category: "Ave"
+    category: "Ave",
   },
   {
-    id: "16",
     name: "Búho",
     scientificName: "Strigiformes",
-    description: "Los búhos son aves rapaces nocturnas extraordinarias, perfectamente adaptadas para la caza en la oscuridad. Destacan por sus enormes ojos orientados hacia adelante, que les proporcionan una excelente visión nocturna, y su asombrosa capacidad para girar la cabeza hasta 270 grados para compensar su incapacidad de mover los ojos en sus órbitas. Otra de sus adaptaciones más notables es la estructura de sus plumas, que amortigua el sonido y les permite un vuelo completamente silencioso para sorprender a sus presas. Son cazadores precisos y fundamentales para mantener el equilibrio en sus ecosistemas.",
-    habitat: "Diversos entornos a nivel mundial, incluyendo bosques, selvas, montañas e incluso zonas urbanas",
+    description:
+      "Los búhos son aves rapaces nocturnas extraordinarias, perfectamente adaptadas para la caza en la oscuridad. Destacan por sus enormes ojos orientados hacia adelante, que les proporcionan una excelente visión nocturna, y su asombrosa capacidad para girar la cabeza hasta 270 grados para compensar su incapacidad de mover los ojos en sus órbitas. Otra de sus adaptaciones más notables es la estructura de sus plumas, que amortigua el sonido y les permite un vuelo completamente silencioso para sorprender a sus presas. Son cazadores precisos y fundamentales para mantener el equilibrio en sus ecosistemas.",
+    habitat:
+      "Diversos entornos a nivel mundial, incluyendo bosques, selvas, montañas e incluso zonas urbanas",
     diet: "Carnívoro (Pequeños mamíferos, insectos, reptiles y otras aves)",
-    image: "https://static.nationalgeographicla.com/files/styles/image_3200/public/nationalgeographic_2711514.webp?w=1600&h=2236&p=top",
+    image:
+      "https://static.nationalgeographicla.com/files/styles/image_3200/public/nationalgeographic_2711514.webp?w=1600&h=2236&p=top",
     wikiUrl: "https://es.wikipedia.org/wiki/Strigiformes",
-    category: "Ave"
+    category: "Ave",
   },
-  
   {
-    id: "17",
     name: "Gallina",
     scientificName: "Gallus gallus domesticus",
-    description: "La gallina es el ave más numerosa del planeta, domesticada hace miles de años. Es conocida principalmente por su capacidad para poner huevos y por su complejo comportamiento social en parvadas, donde establecen una estricta jerarquía conocida como 'orden de picoteo'. Son aves muy activas y curiosas que pasan gran parte del día escarbando el suelo en busca de alimento. Además, disfrutan de darse baños de tierra y polvo, una práctica instintiva y esencial para mantener su plumaje limpio y libre de parásitos.",
+    description:
+      "La gallina es el ave más numerosa del planeta, domesticada hace miles de años. Es conocida principalmente por su capacidad para poner huevos y por su complejo comportamiento social en parvadas, donde establecen una estricta jerarquía conocida como 'orden de picoteo'. Son aves muy activas y curiosas que pasan gran parte del día escarbando el suelo en busca de alimento. Además, disfrutan de darse baños de tierra y polvo, una práctica instintiva y esencial para mantener su plumaje limpio y libre de parásitos.",
     habitat: "Granjas, zonas rurales y entornos domésticos a nivel mundial",
     diet: "Omnívoro (Semillas, insectos, vegetales y pequeños invertebrados)",
     image: "https://www.fincacasarejo.com/Docs/Productos/gallina-Sulmtaler-pareja.jpg",
     wikiUrl: "https://es.wikipedia.org/wiki/Gallus_gallus_domesticus",
-    category: "Ave"
+    category: "Ave",
   },
   {
-
-    id: "18",
-    name:"Lagarto Acorazado Arnadillo",
-    scientificName:"Ouroborus catapharactus",
-    description:"Originario de Sudáfrica, este peculiar lagarto es conocido por su singular mecanismo de defensa: enrollarse en forma de bola y morderse la cola. Al hacerlo, se asemeja al antiguo símbolo del Ouroboros, lo cual se refleja en el nombre científico de la especie. El lagarto armadillo se alimenta principalmente de pequeños invertebrados. Es uno de los pocos lagartos que da a luz crías vivas (en lugar de poner huevos).",
-    habitat:"África (específicamente, Sudáfrica)",
-    diet:"termitas, pequeños invertebrados eje: escorpiones",
-    image:"https://www.activewild.com/wp-content/uploads/2023/04/Armadillo-Girdled-Lizard.jpg",
-    wikiUrl:"https://es.wikipedia.org/wiki/Ouroborus_cataphractus",
-    category: "Reptil"
+    name: "Lagarto Acorazado Arnadillo",
+    scientificName: "Ouroborus catapharactus",
+    description:
+      "Originario de Sudáfrica, este peculiar lagarto es conocido por su singular mecanismo de defensa: enrollarse en forma de bola y morderse la cola. Al hacerlo, se asemeja al antiguo símbolo del Ouroboros, lo cual se refleja en el nombre científico de la especie. El lagarto armadillo se alimenta principalmente de pequeños invertebrados. Es uno de los pocos lagartos que da a luz crías vivas (en lugar de poner huevos).",
+    habitat: "África (específicamente, Sudáfrica)",
+    diet: "termitas, pequeños invertebrados eje: escorpiones",
+    image:
+      "https://www.activewild.com/wp-content/uploads/2023/04/Armadillo-Girdled-Lizard.jpg",
+    wikiUrl: "https://es.wikipedia.org/wiki/Ouroborus_cataphractus",
+    category: "Reptil",
   },
   {
-    id:"19",
-    name:"Tortuga gigante asiática de caparazón blando",
-    scientificName:"Pelochelys cantorii",
-    description:"Originaria del sudeste asiático, esta tortuga de agua dulce es una de las tortugas de caparazón blando más grandes y, al igual que otras tortugas de caparazón blando, posee un caparazón aplanado y coriáceo. Es principalmente carnívora y se alimenta de peces, crustáceos y moluscos. Esta tortuga de aspecto peculiar se encuentra en peligro crítico de extinción debido a la pérdida de su hábitat y la caza excesiva para el consumo de su carne.",
-    habitat:"Asia (Sudeste Asiático)",
-    diet:"Carnívora (Peces, crustáceos y moluscos)",
-    image:"https://www.activewild.com/wp-content/uploads/2022/06/Asian-Giant-Softshell-Turtle.jpg",
-    wikiUrl:"https://en-wikipedia-org.translate.goog/wiki/Asian_giant_softshell_turtle?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc",
-    category:"Reptil"
+    name: "Tortuga gigante asiática de caparazón blando",
+    scientificName: "Pelochelys cantorii",
+    description:
+      "Originaria del sudeste asiático, esta tortuga de agua dulce es una de las tortugas de caparazón blando más grandes y, al igual que otras tortugas de caparazón blando, posee un caparazón aplanado y coriáceo. Es principalmente carnívora y se alimenta de peces, crustáceos y moluscos. Esta tortuga de aspecto peculiar se encuentra en peligro crítico de extinción debido a la pérdida de su hábitat y la caza excesiva para el consumo de su carne.",
+    habitat: "Asia (Sudeste Asiático)",
+    diet: "Carnívora (Peces, crustáceos y moluscos)",
+    image:
+      "https://www.activewild.com/wp-content/uploads/2022/06/Asian-Giant-Softshell-Turtle.jpg",
+    wikiUrl:
+      "https://en-wikipedia-org.translate.goog/wiki/Asian_giant_softshell_turtle?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc",
+    category: "Reptil",
   },
   {
-    id:"20",
-    name:"Eslizones de lengua azul",
-    scientificName:"Tiliqua spp",
-    description:"Originarios de Australia, estos llamativos reptiles son conocidos por sus lenguas de un azul intenso, que exhiben ante posibles depredadores como una forma de exhibición de sobresalto (la visión de la lengua azul del lagarto puede asustar al depredador, permitiéndole escapar). Los eslizones de lengua azul son omnívoros y se alimentan de una variedad de plantas, insectos y pequeños animales",
-    habitat:"Australia",
-    diet:"Omnívoro (Plantas, insectos y pequeños animales)",
-    image:"https://www.activewild.com/wp-content/uploads/2018/04/blue-tongued-skink.jpg",
-    wikiUrl:"https://en-wikipedia-org.translate.goog/wiki/Blue-tongued_skink?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc",
-    category:"Reptil"
-  },
-
-  {
-    id:"21",
-    name:"Lagarto cocodrilo chino",
-    scientificName:"Shinisaurus crocodilurus",
-    description:"Este lagarto semiacuático, originario de China y Vietnam, tiene una apariencia distintiva, con escamas carenadas en el dorso y la cola que recuerdan a las de un cocodrilo. Se alimenta de diversos insectos, invertebrados y peces pequeños. Este peculiar lagarto se encuentra en peligro de extinción debido a la pérdida de su hábitat y a la caza furtiva para su venta como mascota",
-    habitat:"Asia (China y Vietnam)",
-    diet:"Carnívoro (Insectos, invertebrados y peces pequeños)",
-    image:"https://www.activewild.com/wp-content/uploads/2023/04/Chinese-Crocodile-Lizard.jpg",
-    wikiUrl:"https://es.wikipedia.org/wiki/Shinisaurus_crocodilurus",
-    category:"Reptil"
+    name: "Eslizones de lengua azul",
+    scientificName: "Tiliqua spp",
+    description:
+      "Originarios de Australia, estos llamativos reptiles son conocidos por sus lenguas de un azul intenso, que exhiben ante posibles depredadores como una forma de exhibición de sobresalto (la visión de la lengua azul del lagarto puede asustar al depredador, permitiéndole escapar). Los eslizones de lengua azul son omnívoros y se alimentan de una variedad de plantas, insectos y pequeños animales",
+    habitat: "Australia",
+    diet: "Omnívoro (Plantas, insectos y pequeños animales)",
+    image: "https://www.activewild.com/wp-content/uploads/2018/04/blue-tongued-skink.jpg",
+    wikiUrl:
+      "https://en-wikipedia-org.translate.goog/wiki/Blue-tongued_skink?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc",
+    category: "Reptil",
   },
   {
-    id:"22",
-    name:"Geckos voladores",
-    scientificName:"Gekko spp",
-    description:"Originarios del sudeste asiático, estos geckos arborícolas (que habitan en los árboles) poseen adaptaciones especializadas, como pliegues de piel y patas palmeadas, que les permiten planear distancias cortas entre los árboles. Se alimentan principalmente de insectos y otros pequeños invertebrados.",
-    habitat:"Asia (Sudeste Asiático)",
-    diet:"Carnívoro (Insectos y otros pequeños invertebrados)",
-    image:"https://www.activewild.com/wp-content/uploads/2023/04/Kuhls-Flying-Gecko-Ptychozoon-kuhli-CC.jpg",
-    wikiUrl:"https://es.wikipedia.org/wiki/Ptychozoon",
-    category:"Reptil"
-    
-  }
-
-
-/*
- {
-   id: "",
-   name: "",
-   scientificName: "",
-   description: "",
-   habitat: "",
-   diet: "",
-   image: "",
-   wikiUrl: "",
-   category: ""
- }
-*/
-];
-
+    name: "Lagarto cocodrilo chino",
+    scientificName: "Shinisaurus crocodilurus",
+    description:
+      "Este lagarto semiacuático, originario de China y Vietnam, tiene una apariencia distintiva, con escamas carenadas en el dorso y la cola que recuerdan a las de un cocodrilo. Se alimenta de diversos insectos, invertebrados y peces pequeños. Este peculiar lagarto se encuentra en peligro de extinción debido a la pérdida de su hábitat y a la caza furtiva para su venta como mascota",
+    habitat: "Asia (China y Vietnam)",
+    diet: "Carnívoro (Insectos, invertebrados y peces pequeños)",
+    image:
+      "https://www.activewild.com/wp-content/uploads/2023/04/Chinese-Crocodile-Lizard.jpg",
+    wikiUrl: "https://es.wikipedia.org/wiki/Shinisaurus_crocodilurus",
+    category: "Reptil",
+  },
+  {
+    name: "Geckos voladores",
+    scientificName: "Gekko spp",
+    description:
+      "Originarios del sudeste asiático, estos geckos arborícolas (que habitan en los árboles) poseen adaptaciones especializadas, como pliegues de piel y patas palmeadas, que les permiten planear distancias cortas entre los árboles. Se alimentan principalmente de insectos y otros pequeños invertebrados.",
+    habitat: "Asia (Sudeste Asiático)",
+    diet: "Carnívoro (Insectos y otros pequeños invertebrados)",
+    image:
+      "https://www.activewild.com/wp-content/uploads/2023/04/Kuhls-Flying-Gecko-Ptychozoon-kuhli-CC.jpg",
+    wikiUrl: "https://es.wikipedia.org/wiki/Ptychozoon",
+    category: "Reptil",
+  },
+]
