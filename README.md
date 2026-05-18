@@ -1,6 +1,11 @@
 # Enciclopedia de Animales
 
-https://www.youtube.com/watch?v=uGx7D0ucSNs
+<p align="center">
+  <a href="[https://www.youtube.com/watch?v=TU_ID_AQUÍ](https://www.youtube.com/watch?v=uGx7D0ucSNs)">
+    <img src="https://img.youtube.com/vi/TU_ID_AQUÍ/maxresdefault.jpg" alt="Demostración del Proyecto Animales" width="700">
+  </a>
+</p>
+
 
 Este proyecto es una enciclopedia interactiva de animales que integra un frontend moderno con una base de datos backend autónoma y herramientas de automatización para la gestión de contenido.
 
