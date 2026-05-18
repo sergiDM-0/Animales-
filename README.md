@@ -1,5 +1,7 @@
 # Enciclopedia de Animales
 
+https://www.youtube.com/watch?v=uGx7D0ucSNs
+
 Este proyecto es una enciclopedia interactiva de animales que integra un frontend moderno con una base de datos backend autónoma y herramientas de automatización para la gestión de contenido.
 
 ## 🚀 Stack Tecnológico
